@@ -21,3 +21,9 @@ $GLOBALS['DATABASE']['section'][0]["table_range"] = 1;
 $GLOBALS['DATABASE']['section'][0]["group_count"] = 1;
 $GLOBALS['DATABASE']['section'][0]["ips"][0]["master"] = array("db_host" => "127.0.0.1:3306", "db_name" => "test");  // 默认组
 $GLOBALS['DATABASE']['section'][0]["ips"][0]["slave"][] = array("db_host" => "127.0.0.1:3306", "db_name" => "test"); // 默认组
+
+/* Memcached Keys */
+$GLOBALS["DATABASE"]['MEMCACHED_PREFIX'] = array();
+
+/* dbc层 */
+$GLOBALS["DATABASE"]['MEMCACHED_PREFIX']['D_100'] = 'dbc_test::get_one';
