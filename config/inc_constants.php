@@ -57,6 +57,7 @@ switch ($app)
     default :
         define('CUR_DIR', '/php.dyc.com');
         define('CUR_MODEL', '/');
+        define('LANG', 'zh_CN');
         break;
 }
 
