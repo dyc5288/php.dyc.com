@@ -10,17 +10,17 @@
 $GLOBALS['CONFIG'] = array();
 
 /* 调试IP */
-$GLOBALS['CONFIG']['debug_ip'] = array('192.168.1.138', '192.168.33.1');
+$GLOBALS['CONFIG']['debug_ip'] = array();
 
 /* 当前IP */
 $GLOBALS['CONFIG']['ip'] = '';
 
 /* Gearman */
-$GLOBALS['CONFIG']['gearman'] = "172.16.0.117:4730";
+$GLOBALS['CONFIG']['gearman'] = "127.0.0.1:4730";
 
 /* Memcached */
 $GLOBALS['CONFIG']['memcached'] = array();
-$GLOBALS['CONFIG']['memcached'][] = array('host'    => '172.16.0.118', 'port'    => 11211, 'weight'  => 0.1, 'timeout' => 0.5);
+$GLOBALS['CONFIG']['memcached'][] = array('host'    => '127.0.0.1', 'port'    => 11211, 'weight'  => 0.1, 'timeout' => 0.5);
 
 /* 需要加载类的文件路径 */
 $GLOBALS["CONFIG"]["LIBRARY"] = array();
