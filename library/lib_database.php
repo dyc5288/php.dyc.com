@@ -6,6 +6,8 @@
  * @author duanyunchao
  * @version $Id$
  */
+!defined('IN_INIT') && exit('Access Denied');
+
 class lib_database
 {
 
