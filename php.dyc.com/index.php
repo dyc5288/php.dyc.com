@@ -29,4 +29,3 @@ define('URL_CURRENT', $cururl);
 
 /* 控制器路由 */
 execute_ctl('ctl_' . $GLOBALS['CT'], $GLOBALS['AC']);
-?>
