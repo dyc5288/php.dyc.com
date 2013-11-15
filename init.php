@@ -26,7 +26,7 @@ require PATH_ROOT . '/config/inc_database.php';
 date_default_timezone_set('Asia/Shanghai');
 
 /* 加载函数库 */
-require PATH_LIBRARY . '/lib_common.php';
+require PATH_LIBRARY . '/lib_func.php';
 
 /* 错误日志 */
 ini_set('error_log', PATH_DATA . '/notsync/log/php_error.log');
