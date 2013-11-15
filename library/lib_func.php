@@ -906,11 +906,12 @@ function change_column(&$data, $old_column, $new_column)
  */
 function debug($data, $post = false)
 {
+    return false;
     $params = array();
     $params['data']  = $data;
     $params['url']   = get_cururl();
     $params['posts'] = $post ? $_REQUEST : '';
-    lib_gearman::add_job($GLOBALS['CONFIG']['gearman_passport'], 'DEBUG_LOG', $params, 3);
+    lib_gearman::add_job($GLOBALS['CONFIG']['gearman'], 'DEBUG_LOG', $params, 3);
 }
 
 /**
