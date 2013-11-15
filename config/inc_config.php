@@ -24,8 +24,8 @@ $GLOBALS['CONFIG']['memcached'][] = array('host'    => '127.0.0.1', 'port'    =>
 
 /* 需要加载类的文件路径 */
 $GLOBALS["CONFIG"]["LIBRARY"] = array();
-$GLOBALS["CONFIG"]["LIBRARY"]["lib_template"]  = PATH_LIBRARY . "/cls_template.php";
-$GLOBALS["CONFIG"]["LIBRARY"]["lib_database"]  = PATH_LIBRARY . "/cls_database.php";
+$GLOBALS["CONFIG"]["LIBRARY"]["lib_template"]  = PATH_LIBRARY . "/lib_template.php";
+$GLOBALS["CONFIG"]["LIBRARY"]["lib_database"]  = PATH_LIBRARY . "/lib_database.php";
 $GLOBALS["CONFIG"]["LIBRARY"]["lib_func"]      = PATH_LIBRARY . "/lib_func.php";
-$GLOBALS["CONFIG"]["LIBRARY"]["lic_memcached"] = PATH_LIBRARY . "/pub_memcached.php";
-$GLOBALS["CONFIG"]["LIBRARY"]["lib_gearman"]   = PATH_LIBRARY . "/cls_gearman.php";
+$GLOBALS["CONFIG"]["LIBRARY"]["lic_memcached"] = PATH_LIBRARY . "/lib_memcached.php";
+$GLOBALS["CONFIG"]["LIBRARY"]["lib_gearman"]   = PATH_LIBRARY . "/lib_gearman.php";
