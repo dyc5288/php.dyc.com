@@ -937,7 +937,6 @@ function mysql_value($s)
 function debug_error_handler($errno, $errmsg, $filename, $linenum, $vars)
 {
     $return = array();
-    $return['user_id']  = pub_mod_auth::get_cur_user_id();
     $return['errno']    = $errno;
     $return['errmsg']   = $errmsg;
     $return['filename'] = $filename;
