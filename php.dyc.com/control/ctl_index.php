@@ -24,6 +24,12 @@ class ctl_index
             ET($e->getMessage(), $return);
             $return['message'] = $e->getMessage();
         }
+        
+        pub_mod_test::add();
+        pub_mod_test::update();
+        var_dump(pub_mod_test::get());
+        var_dump(pub_mod_test::get_list());
+        var_dump(pub_mod_test::get_count());
 
         //json_print($return);
         lib_template::assign('return', $return);
