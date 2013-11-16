@@ -13,6 +13,7 @@ class ctl_index
 
     public function index()
     {
+        //phpinfo();die;
         //echo "test";
         $return = array();
         try
@@ -32,6 +33,10 @@ class ctl_index
         var_dump(pub_mod_test::get_count());
         
         lib_gearman::add_job($GLOBALS['CONFIG']['gearman'], 'MYTEST', $return, 3);
+        $result = SM('test3', 'D_100', '1');
+        var_dump($result);
+        $result = GM('D_100', '1');
+        var_dump($result);
 
         //json_print($return);
         lib_template::assign('return', $return);
