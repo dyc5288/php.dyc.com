@@ -28,7 +28,7 @@ class hlp_tool
         {
             $table = hlp_common::get_split_table($i, $table_name);
             $tsql  = sprintf($sql, $table['name']);
-            $res   = cls_database::query($tsql, $table['index']);
+            $res   = lib_database::query($tsql, $table['index']);
             $msg   = "Create table {$table['name']}";
 
             if ($res)
@@ -62,7 +62,7 @@ class hlp_tool
         {
             $table = hlp_common::get_split_table($i, $table_name);
             $tsql  = sprintf($sql, $table['name']);
-            $res   = cls_database::query($tsql, $table['index']);
+            $res   = lib_database::query($tsql, $table['index']);
             $msg   = "Alter table {$table['name']}";
 
             if ($res)
@@ -97,7 +97,7 @@ class hlp_tool
         {
             $table = hlp_common::get_split_table($i, $table_name);
             $tsql  = sprintf($sql, $table['name']);
-            $res   = cls_database::query($tsql, $table['index']);
+            $res   = lib_database::query($tsql, $table['index']);
             $msg   = "DROP table {$table['name']}";
 
             if ($res)
@@ -122,7 +122,7 @@ class hlp_tool
     {
         $table = hlp_common::get_split_table($i, $table_name);
         $sql   = "show create table {$table['name']};";
-        $res   = cls_database::get_one($sql, $table['index']);
+        $res   = lib_database::get_one($sql, $table['index']);
         var_dump($res);
     }
 
