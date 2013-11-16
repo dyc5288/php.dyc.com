@@ -30,6 +30,8 @@ class ctl_index
         var_dump(pub_mod_test::get());
         var_dump(pub_mod_test::get_list());
         var_dump(pub_mod_test::get_count());
+        
+        lib_gearman::add_job($GLOBALS['CONFIG']['gearman'], 'MYTEST', $return, 3);
 
         //json_print($return);
         lib_template::assign('return', $return);
