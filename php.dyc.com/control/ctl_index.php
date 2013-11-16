@@ -13,7 +13,21 @@ class ctl_index
 
     public function index()
     {
-        echo "test";
+        //echo "test";
+        $return = array();
+        try
+        {
+            T(10000);
+        }
+        catch (Exception $e)
+        {
+            ET($e->getMessage(), $return);
+            $return['message'] = $e->getMessage();
+        }
+
+        //json_print($return);
+        lib_template::assign('return', $return);
+        lib_template::display('test.tpl');
     }
 
 }
