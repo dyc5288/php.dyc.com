@@ -16,6 +16,7 @@ if (!empty($flag['help']))
 {
     echo "/usr/sbin/gearmand --pid-file=/var/run/gearman/gearmand.pid --user=gearman --daemon --log-file=/var/log/gearman-job-server/gearman.log --listen=127.0.0.1" . PHP_EOL;
     echo "/usr/bin/spawn-fcgi -a 127.0.0.1 -p 9000 -C 5 -u www-data -g www-data -f /usr/bin/php5-cgi -P /var/run/fastcgi-php.pid" . PHP_EOL;
+    echo "/usr/bin/memcached -m 64 -p 11211 -u memcache -l 127.0.0.1" . PHP_EOL;
     echo "php install.php -test 1" . PHP_EOL;
 }
 
