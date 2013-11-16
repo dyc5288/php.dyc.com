@@ -9,8 +9,8 @@
 $GLOBALS["DATABASE"] = array();
 
 /* my数据库 */
-$GLOBALS['DATABASE']['databases']['db_user']    = 'root';
-$GLOBALS['DATABASE']['databases']['db_pass']    = '123456';
+$GLOBALS['DATABASE']['databases']['db_user']    = 'test';
+$GLOBALS['DATABASE']['databases']['db_pass']    = 'test';
 $GLOBALS['DATABASE']['databases']['db_name']    = 'test';
 $GLOBALS['DATABASE']['databases']['db_charset'] = 'utf-8';
 
