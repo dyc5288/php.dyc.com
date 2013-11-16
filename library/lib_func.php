@@ -852,6 +852,33 @@ function jsonp_print($data, $js_return = '', $js_callback = '')
 }
 
 /**
+ * 强建目录路径
+ *
+ * @param string $path
+ * @return string || false
+ */
+function path_exists($path)
+{
+    $pathinfo = pathinfo($path . '/tmp.txt');
+
+    if (!empty($pathinfo['dirname']))
+    {
+        if (file_exists($pathinfo['dirname']) === false)
+        {
+            if (mkdir($pathinfo['dirname'], 0777, true) === false)
+            {
+                $log = array();
+                $log['message'] = $path;
+                $log['key']     = 2000001;
+                return false;
+            }
+        }
+    }
+
+    return $path;
+}
+
+/**
  * 某数组是否存在指定字段的值
  *
  * @param array $data
