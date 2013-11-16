@@ -19,10 +19,10 @@ if (!empty($flag['help']))
 
 if (!empty($flag['test']))
 {
-    $number = 200;
+    $number = 1;
     $sql    = "CREATE TABLE IF NOT EXISTS `%s` (
         `tid` int(11) NOT NULL DEFAULT '0' COMMENT 'ID',
-        `test` varchar(50) NOT NULL DEFAULT '' COMMENT '内容'
+        `test` varchar(50) NOT NULL DEFAULT '' COMMENT '内容',
         PRIMARY KEY (`tid`)
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='测试'";
 
