@@ -30,7 +30,7 @@ class dbc_test
         }
 
         $table = hlp_common::get_split_table(null, self::TABLE_NAME);
-        $sql   = "SELECT * FROM {$table['name']} WHERE $tid = '{$tid}' ";
+        $sql   = "SELECT * FROM {$table['name']} WHERE tid = '{$tid}' ";
         return lib_database::get_one($sql, $table['index']);
     }
 
