@@ -32,7 +32,7 @@ class ctl_index
         var_dump(pub_mod_test::get_list());
         var_dump(pub_mod_test::get_count());
         
-        lib_gearman::add_job($GLOBALS['CONFIG']['gearman'], 'MYTEST', $return, 3);
+        //lib_gearman::add_job($GLOBALS['CONFIG']['gearman'], 'MYTEST', $return, 3);
         $result = SM('test3', 'D_100', '1');
         var_dump($result);
         $result = GM('D_100', '1');

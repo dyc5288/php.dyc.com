@@ -352,7 +352,8 @@ function is_serialize($string)
  */
 function SM($value, $preifx, $key = false, $expire = 3600)
 {
-    return lib_memcached::set_cache($value, $preifx, $key, $expire);
+	return false;
+    //return lib_memcached::set_cache($value, $preifx, $key, $expire);
 }
 
 /**
@@ -362,7 +363,8 @@ function SM($value, $preifx, $key = false, $expire = 3600)
  */
 function GM($preifx, $key = false)
 {
-    return lib_memcached::get_cache($preifx, $key);
+	return false;
+    //return lib_memcached::get_cache($preifx, $key);
 }
 
 /**
@@ -372,7 +374,8 @@ function GM($preifx, $key = false)
  */
 function DM($preifx, $key = false)
 {
-    return lib_memcached::del_cache($preifx, $key);
+	return false;
+    //return lib_memcached::del_cache($preifx, $key);
 }
 
 /**
